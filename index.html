@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Habit Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class = "container">
+        <!--Side bar items-->
+        <div class = "sidebar">
+            <div class = "logo">
+                <h1>Study Habits</h1>
+                <p>Balance your academic life</p>
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Habits</li>
+                    <li>Focus Mode</li>
+                    <li>Analytics</li>
+                    <li>Settings</li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <!--Main content-->
+        <div class ="main-content">
+            <div class ="header">
+                <div class = "greeting">
+
+                    <h2 id="greeting-text">Greetings student</h2>
+                    <p>Stay proactive and maintain balance</p>
+
+
+                </div>
+                <div class = "name-input">
+                    <input type="text" id="student-name" placeholder="Enter your name">
+                    <button id="save-btn">Save</button>
+
+                </div>
+
+            </div>
+
+            <div class = "summary-section">
+                <div class="card">
+                    <h3>Total Habits</h3>
+                    <p id="total-habits">0</p>
+
+                </div>
+
+                <div class="card">
+                    <h3>Done Today</h3>
+                    <p id="done-habits">0</p>
+
+                </div>
+                <div class="card">
+                    <h3>Completion rate</h3>
+                    <p id="completion-rate">0%</p>
+
+                </div>
+                <div class="card">
+                    <h3>Longest Streak</h3>
+                    <p>🔥</p>
+
+                </div>
+
+            </div>
+            <div class ="balance-section">
+                <h2>Academic Balance</h2>
+
+                <div class ="balance-item">
+                    <div class="balance-text">
+                        <p>Academics</p>
+                        <span>80%</span>
+
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress academics"> </div> 
+
+
+                        </div>
+
+                    </div>
+
+                    <!--sleep/rest-->
+                    <div class="balance-item">
+                        <div class="balance-text">
+                            <p>Sleep</p>
+                            <span>95%</span>
+
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress sleep">
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!----Add new habit section-->
+                <div class="add-habit-section">
+                    <h2>Add New Habit</h2>
+
+                    <form class ="habit-form">
+                        <div class="form-group">
+                            
+                            <label>Habit Name</label>
+                            <input type="text" id="habit-name" placeholder="Enter your habit">
+
+                        </div>
+                        <!----Days-->
+
+                        <div class="form-group">
+                            <label>Target Days</label>
+                            <input type="number" id="target-days" placeholder="1-7">
+
+
+                        </div>
+
+                        <!--Category-->
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select id="habit-category">
+                                
+                                <option>Select Category</option>
+                                <option>Academics</option>
+                                <option>Reading</option>
+                                <option>Coding</option>
+                                <option>Rest</option>
+                                <option>Fitness</option>
+                            
+
+                            </select>
+                            
+
+
+                        </div>
+
+                        <!--Errro Message-->
+                        <p id="error-message"></p>
+                        <button type="button" id="add-habit-btn">
+                            Add Habit
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <div class="habit-section">
+                    <h2>Today's Habits</h2>
+                    <div class="Habit-card">
+                        <div class="Habit-info">
+                            <h3>Subjects</h3>
+                            <p>Academics</p>
+
+                        </div>
+
+                        <div class="Habit-Status">
+                            <p> 🔥12 Day Streak </p>
+
+                            <button> Done Today</button>
+
+                        </div>
+
+                    </div>
+
+                    <!--Second habit card-->
+                    <div class="Habit-card">
+                        <div class="Habit-info">
+                            <h3>Sleep before 11pm</h3>
+                            <p>Wellness</p>
+
+                        </div>
+                        <div class="Habit-Status">
+                            <p> 🔥7 Day streak</p>
+                            <button>Done Today</button>
+
+                        </div>
+
+                    </div>
+                    
+                    <!--third habit card-->
+                    <div class="Habit-card">
+                        <div class="Habit-info">
+                            <h3>Practice coding</h3>
+                            <p>Practice</p>
+
+                        </div>
+                        <div class="Habit-Status">
+                            <p>🔥5 Day streak</p>
+                            <button>Done Today</button>
+
+
+                        </div>
+                                
+
+                    </div>
+
+
+                </div>
+
+                <!--Rest-->
+               <div class="balance-item">
+                <div class="balance-text">
+                    <p>Rest and Breaks</p>
+                    <span>60%</span>
+
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress rest"></div>
+
+                </div>
+
+
+               </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
